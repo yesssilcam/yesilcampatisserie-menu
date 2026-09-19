@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Yeşilçam Kahve Evi - Digitale Menukaart</title>
+    
+    <link rel="icon" type="image/png" href="logo.jpg">
+    <meta name="theme-color" content="#122016">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    <link rel="stylesheet" href="restorant.css">
+</head>
+<body>
+
+<!-- Arka Plan Slayt Yapısı -->
+<div class="bg-slider">
+    <div class="slide slide1"></div>
+    <div class="slide slide2"></div>
+    <div class="slide slide3"></div>
+</div>
+
+<div class="mobile-container">
+
+    <!-- 1. HEADER / VİDEO VE LOGO -->
+    <header class="hero">
+        <video autoplay loop muted playsinline src="videosan.mp4"></video>
+        <div class="hero-overlay"></div>
+        <img class="logo-img" src="logo.png" alt="Yeşilçam Logo">
+    </header>
+
+   <!-- 2. POPULAIR / ÖNE ÇIKANLAR -->
+<section class="section">
+    <h2 class="section-title">✨ Popülair (Öne Çıkanlar)</h2>
+    
+    <div class="slider-container">
+        <button class="scroll-btn left-btn" onclick="scrollSlider(-1)">&#10094;</button>
+        
+       <div class="horizontal-scroll" id="favSlider">
+            <!-- 1. Ürün -->
+            <div class="fav-card" onclick="openImgModal('ürünler/çay.png')">
+                <img src="ürünler/çay.png" alt="Klasik Çay">
+                <div class="fav-title">Klasik Çay</div>
+            </div>
+            
+            <!-- 2. Ürün -->
+            <div class="fav-card" onclick="openImgModal('ürünler/künfe.png')">
+                <img src="ürünler/künfe.png" alt="Künefe">
+                <div class="fav-title">Künefe</div>
+            </div>
+            
+            <!-- 3. Ürün -->
+            <div class="fav-card" onclick="openImgModal('balava.jpeg')">
+                <img src="balava.jpeg" alt="Midye Baklava">
+                <div class="fav-title">Midye Baklava</div>
+            </div>
+            
+            <!-- 4. Ürün -->
+            <div class="fav-card" onclick="openImgModal('soğukbaklava.jpg')">
+                <img src="soğukbaklava.jpg" alt="Soğuk Baklava">
+                <div class="fav-title">Soğuk Baklava</div>
+            </div>
+            
+            <!-- 5. Ürün -->
+            <div class="fav-card" onclick="openImgModal('pizza.jpeg')">
+                <img src="pizza.jpeg" alt="Pizza">
+                <div class="fav-title">Pizza</div>
+            </div>
+            
+            <!-- 6. Ürün -->
+            <div class="fav-card" onclick="openImgModal('pide.jpeg')">
+                <img src="pide.jpeg" alt="Kuşbaşı Kaşar Pide">
+                <div class="fav-title">Kuşbaşı Kaşar Pide</div>
+            </div>
+            
+            <!-- 7. Ürün -->
+            <div class="fav-card" onclick="openImgModal('lahmacun.jpg')">
+                <img src="lahmacun.jpg" alt="Turkish Pizza">
+                <div class="fav-title">Turkish Pizza</div>
+            </div>
+        </div>
+        
+        <button class="scroll-btn right-btn" onclick="scrollSlider(1)">&#10095;</button>
+    </div>
+</section>
+
+    <!-- 3. KATEGORİLER (Tüm Kategoriler Tam Kadro - Şık Tasarım) -->
+    <section class="section">
+        <h2 class="section-title">📂 Categorieën (Kategoriler)</h2>
+        <div class="category-grid">
+            
+            <!-- Ontbijt -->
+            <div class="cat-card full-width" onclick="window.location.href='kahvaltı.html'">
+                <img src="ürünler/kahvlatı.png" alt="Ontbijt" onerror="this.src='https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&w=800&q=80'">
+                <div class="cat-overlay">Ontbijt (Serpme Kahvaltı)</div>
+            </div>
+
+            <!-- Pide & Lahmacun -->
+           <div class="cat-card full-width" onclick="window.location.href='pidelahmacun.html'">
+                <img src="pide.jpeg" alt="Pide & Lahmacun" onerror="this.src='https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=500&q=80'">
+                <div class="cat-overlay">Pide & Lahmacun</div>
+            </div>
+
+            <!-- Pizza's -->
+           <div class="cat-card full-width" onclick="window.location.href='pizza.html'">
+                <img src="pizza-kapak.jpg" alt="Pizza's" onerror="this.src='https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=500&q=80'">
+                <div class="cat-overlay">Pizza's (Pizzalar)</div>
+            </div>
+
+            <!-- Pasta's -->
+          <div class="cat-card full-width" onclick="window.location.href='pastas.html'">
+                <img src="makarna.jpeg" alt="Pasta's" onerror="this.src='https://images.unsplash.com/photo-1621996346565-e3d5d6281295?auto=format&fit=crop&w=500&q=80'">
+                <div class="cat-overlay">Pasta's (Makarnalar)</div>
+            </div>
+
+            <!-- Burgers -->
+           <div class="cat-card full-width" onclick="window.location.href='burger.html'">
+                <img src="burger-kapak.jpg" alt="Burgers" onerror="this.src='https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=500&q=80'">
+                <div class="cat-overlay">Burgers (Hamburger)</div>
+            </div>
+
+            <!-- Baklava -->
+            <div class="cat-card full-width" onclick="window.location.href='baklava.html'">
+                <img src="baklava 12.png" alt="Baklava" onerror="this.src='https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?auto=format&fit=crop&w=800&q=80'">
+                <div class="cat-overlay">Baklava</div>
+            </div>
+
+            <!-- Nagerechten -->
+           <div class="cat-card" onclick="window.location.href='tatlı.html'">
+                <img src="tatlılar.jpeg" alt="Nagerechten" onerror="this.src='https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=800&q=80'">
+                <div class="cat-overlay">Dessert(Tatlılar)</div>
+            </div>
+
+          <!-- Dranken -->
+<div class="cat-card" onclick="window.location.href='drink.html'">
+    <img src="icecekler.jpeg" alt="Dranken" onerror="this.src='https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=500&q=80'">
+    <div class="cat-overlay">Dranken (İçecekler)</div>
+</div>
+
+            <!-- Waterpijp -->
+           <div class="cat-card full-width" onclick="window.location.href='sackavurma.html'">
+                <img src="saç kavurma.jpeg" alt="Waterpijp" onerror="this.src='https://images.unsplash.com/photo-1527661591475-527312dd65f5?auto=format&fit=crop&w=500&q=80'">
+                <div class="cat-overlay">Pangerechten (Saç Kavurma)</div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 4. FOOTER VE İLETİŞİM -->
+    <footer class="footer">
+        <h3>YESİLCAM PATİSSERİE</h3>
+        <p>Van der Vennestraat 135B</p>
+        <p>2525 CC Den Haag, Nederland</p>
+        <p>📞 +31 70 222 32 32</p>
+        
+        <div class="footer-actions">
+            <button class="btn-action" onclick="openModal('mapModal')">📍 Route (Yol Tarifi)</button>
+            <a href="https://maps.app.goo.gl/NNpXhGc4XynQGuFUA" target="_blank" class="btn-action">💬 Review (Yorum Yap)</a>
+        </div>
+    </footer>
+
+</div>
+
+<!-- YOL TARİFİ MODAL -->
+<div id="mapModal" class="modal">
+    <div class="modal-box">
+        <span class="close-icon" onclick="closeModal('mapModal')">&times;</span>
+        <h4>Kies een Navigatie</h4>
+        <a href="https://maps.google.com/?q=Van+der+Vennestraat+135B+2525+CC+Den+Haag" target="_blank" class="map-link">Google Maps</a>
+        <a href="https://yandex.com/maps/?text=Van+der+Vennestraat+135B+2525+CC+Den+Haag" target="_blank" class="map-link">Yandex Navigatie</a>
+        <a href="http://maps.apple.com/?q=Van+der+Vennestraat+135B+2525+CC+Den+Haag" target="_blank" class="map-link">Apple Maps</a>
+    </div>
+</div>
+
+<!-- FOTO MODAL -->
+<div id="imgModal" class="modal">
+    <div class="modal-box img-box">
+        <span class="close-icon" onclick="closeModal('imgModal')">&times;</span>
+        <img id="modalImg" class="preview-img" src="" alt="Afbeelding">
+    </div>
+</div>
+<a href="videolumenu.html" class="floating-menu-btn">Bir Önceki Menü</a>
+
+<script src="restorant.js"></script>
+</body>
+</html>

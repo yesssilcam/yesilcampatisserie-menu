@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yeşilçam - Müşteri Yorumları</title>
+    
+    <style>
+        /* Yorumlar Sayfasına Özel Ek Stiller */
+        body {
+            background-color: #2b1a0e !important;
+            color: #fdfbf7 !important;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .comments-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding-bottom: 40px;
+        }
+
+        .header-section {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .header-section h1 {
+            color: #d4af37;
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .btn-new-review {
+            display: inline-block;
+            background-color: #e67e22;
+            color: #ffffff;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            box-shadow: 0 4px 15px rgba(230, 126, 34, 0.4);
+            transition: 0.3s;
+        }
+
+        .btn-new-review:hover {
+            background-color: #d35400;
+        }
+
+        .comment-card {
+            background-color: #3b2314;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            border-radius: 14px;
+            padding: 18px 20px;
+            margin-bottom: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .comment-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        .stars {
+            color: #ffd700;
+            font-size: 14px;
+        }
+
+        .time {
+            font-size: 12px;
+            color: #bca473;
+        }
+
+        .comment-text {
+            font-size: 14px;
+            line-height: 1.5;
+            color: #fdfbf7;
+            margin-bottom: 10px;
+        }
+
+        .customer-name {
+            font-size: 12px;
+            color: #d4af37;
+            text-align: right;
+            font-weight: 600;
+        }
+
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            color: #d4af37;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="comments-container">
+        
+        
+        <!-- Üst Başlık ve Google Maps Yorum Butonu -->
+        <div class="header-section">
+            <h1>Müşteri Deneyimleri</h1>
+            <p style="font-size: 13px; color: #bca473; margin-bottom: 15px;">Siz de deneyimlerinizi bizimle paylaşmak için Google Haritalar'ı kullanabilirsiniz.</p>
+            <a href="https://maps.app.goo.gl/NNpXhGc4XynQGuFUA" target="_blank" class="btn-new-review">✏️ Google'da Yorum Yazın</a>
+        </div>
+
+        <!-- Yorum 1 -->
+        <div class="comment-card">
+            <div class="comment-header">
+                <span class="stars">★★★★★</span>
+                <span class="time">5 ay önce</span>
+            </div>
+            <div class="comment-text">
+                "Pideleri ve künefeleri çok güzel, kaliteli ve bol malzemeli. Konuşmalarımızdan sanırım öğrenci olduğumuzu duyup ekstra meze ve salata ikram ettiler, umarım işleriniz bereketlenir daha da artar 🫶"
+            </div>
+            <div class="customer-name">Beytullah / Öğrenci Ziyaretçimiz</div>
+        </div>
+
+        <!-- Yorum 2 -->
+        <div class="comment-card">
+            <div class="comment-header">
+                <span class="stars">★★★★★</span>
+                <span class="time">6 ay önce</span>
+            </div>
+            <div class="comment-text">
+                "Mekan çok güzel tatlılarda lezzetliydi olumsuz yorumları pek düşünmeyin Kendiniz gelin ve deneyin Başarılı bir yer....."
+            </div>
+            <div class="customer-name">Mersin Yılmaz</div>
+        </div>
+
+        <!-- Yorum 3 -->
+        <div class="comment-card">
+            <div class="comment-header">
+                <span class="stars">★★★★★</span>
+                <span class="time">1 yıl önce</span>
+            </div>
+            <div class="comment-text">
+                "Uzun zamandır yediğim en lezzetli pizza ve baklava idi teşekkürler Yeşilçam ailesi herkese tavsiye ediyorum"
+            </div>
+            <div class="customer-name">Nazli Demirci</div>
+        </div>
+
+        <!-- Yorum 4 -->
+        <div class="comment-card">
+            <div class="comment-header">
+                <span class="stars">★★★★★</span>
+                <span class="time">1 yıl önce</span>
+            </div>
+            <div class="comment-text">
+                "Yeşilçam'ın tatlıları pastaları Şerifoğlu yemekleri harika sunumuyla güler yüzleriyle hizmetinizde çıkın çıkın gelin Yeşilçam'a bekleriz"
+            </div>
+            <div class="customer-name">Sevda Yildirim</div>
+        </div>
+
+        <!-- Yorum 5 -->
+        <div class="comment-card">
+            <div class="comment-header">
+                <span class="stars">★★★★★</span>
+                <span class="time">1 yıl önce</span>
+            </div>
+            <div class="comment-text">
+                "Servis olarak dekorasyon lezzet olarak her şey gayet çok güzel yemek çeşitleri tatlı çeşitleri gayet lezzetli ve taze fiyatları da gayet uygun"
+            </div>
+            <div class="customer-name">Murat Telli</div>
+        </div>
+
+        <!-- Yorum 6 -->
+        <div class="comment-card">
+            <div class="comment-header">
+                <span class="stars">★★★★★</span>
+                <span class="time">1 yıl önce</span>
+            </div>
+            <div class="comment-text">
+                "Bir Antepli olarak çok sevdik fıstıklar taze kadayıfı tavsiye ederim aşırı lezzetli ve hizmet güler yüz muhteşem"
+            </div>
+            <div class="customer-name">Ayşegül Güzel</div>
+        </div>
+
+        <!-- Yorum 7 -->
+        <div class="comment-card">
+            <div class="comment-header">
+                <span class="stars">★★★★★</span>
+                <span class="time">2 yıl önce</span>
+            </div>
+            <div class="comment-text">
+                "Köln'deki başarısını Den Haag'a getirmiş. Havuç dilimi şöbiyet boza harikaydı. Sabahları kahvaltıda kavurmalı menemeni herkese tavsiye ederim."
+            </div>
+            <div class="customer-name">Ozberk Mf</div>
+        </div>
+
+        <!-- Menüye Geri Dönüş Linki -->
+        <a href="index.html" class="back-link">← Ana Menüye Dön</a>
+
+    </div>
+
+</body>
+</html>
